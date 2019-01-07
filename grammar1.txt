@@ -1,0 +1,14 @@
+I
+I E F L
+if then ( ) else repeat until := < <= , id
+10
+I:if E then ( I )
+I:if E then ( I ) else I
+I:repeat I until E
+I:F := F
+E:F < F
+E:F <= F
+F:id
+F:id ( L )
+L:id
+L:L , id
