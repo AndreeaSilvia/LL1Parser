@@ -1,0 +1,34 @@
+﻿<Window x:Class="LL1_remake.Parse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LL1_remake"
+        mc:Ignorable="d"
+        Title="Parse" Height="600" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBox Name="Your_big_text"
+                 FontSize="15"
+                 Width="960"
+                 Height="400"
+                 Grid.Row="1"
+                 Grid.Column="0"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center" Grid.IsSharedSizeScope="True" HorizontalScrollBarVisibility="Visible"
+                 />
+        
+        <TextBlock Name="Message"
+                   FontSize="15"
+                   FontWeight="Bold"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   />
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+gr 1:
+"id := id $" CORECT
+"if id < id then ( repeat if id <= id then ( repeat if id < id then ( id := id ) else id := id until id < id ) else id := id until id < id ) else id := id $" CORECT
+"if id <= then ( id := id ) $" CORECT
+
+gr 2:
+"a * a + a $" CORECT
+"a * ( a + a ) $" CORECT
+"( a ) $" CORECT
+"( ( a + a ) + ( a * ( a + a ) ) ) * a $" CORECT
+
+gr 3:
+"a ( a , a ) $" CORECT
+"a ( a , a ) * a + ( a ( a , a ) + a ) * a $" CORECT
++ cele de la gr 2

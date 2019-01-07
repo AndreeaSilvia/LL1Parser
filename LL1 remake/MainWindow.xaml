@@ -1,0 +1,168 @@
+﻿<Window x:Class="LL1_remake.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LL1_remake"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="560" Width="900">
+    <Grid Height="512" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="LL(1) Parser"
+                   FontSize="35"
+                   FontWeight="Bold"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"/>
+
+        <TextBlock Text="Select a grammar to check:  "
+                   FontSize="15"
+                   FontWeight="Bold"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   />
+
+        <TextBox Name="FilePath"
+                 FontSize="15"
+                 Width="420"
+                 Height="25"
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Bottom"
+                 MouseDoubleClick="FilePath_MouseDoubleClick"
+                 />
+
+        <Button Content="Test Grammar"
+                Name = "TestGrammarButton"
+                Grid.Row="1"
+                Grid.Column="2"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Height="30"
+                Width="100"
+                Click="TestGrammarButton_Click"
+                Margin="16,0,0,0"/>
+
+        <TextBlock Text="Is a LL(1) grammar?  "
+                   FontSize="15"
+                   FontWeight="Bold"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   />
+
+        <Button Content="Test for LL(1)"
+                Name = "TestLL1Button"
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Height="30"
+                Width="120"
+                Click="TestLL1Button_Click" 
+                Margin="16,0,0,0"/>
+
+        <Button Content="Create lookup table"
+                Name = "CreateTableButton"
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Height="30"
+                Width="120"
+                Click="CreateTableButton_Click" 
+                Margin="0,0"/>
+
+        <Button Content="See lookup table"
+                Name = "SeeTableButton"
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Height="30"
+                Width="120"
+                Click="SeeTableButton_Click" 
+                Margin="0,0,16,0"/>
+
+        <TextBlock Text="Generate and compile code  "
+                   FontSize="15"
+                   FontWeight="Bold"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   />
+
+        <Button Content="Start"
+                Name = "StartButton"
+                Grid.Row="3"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Height="30"
+                Width="120"
+                Click="StartButton_Click" 
+                Margin="16,0,0,0"/>
+
+        <TextBlock Text="Write a sentence:  "
+                   FontSize="15"
+                   FontWeight="Bold"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   />
+
+        <TextBox Name="Input_Expresion"
+                 FontSize="15"
+                 Width="420"
+                 Height="25"
+                 Grid.Row="4"
+                 Grid.Column="1"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Bottom"
+                 />
+
+        <Button Content="Verify"
+                Name = "VerifyButton"
+                Grid.Row="4"
+                Grid.Column="2"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Height="30"
+                Width="100"
+                Click="VerifyButton_Click"
+                Margin="16,0,0,0"/>
+
+        <TextBox Name="Result"
+                 FontSize="15"
+                 Width="420"
+                 Height="78"
+                 Grid.Row="5"
+                 Grid.Column="1"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Bottom" Margin="13,0,13,30" Grid.RowSpan="2" VerticalScrollBarVisibility="Auto"
+                 />
+
+    </Grid>
+</Window>
